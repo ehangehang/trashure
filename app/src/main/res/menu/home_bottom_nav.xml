@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeNavBeranda"
+        android:icon="@drawable/ic_home_home"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/homeNavPenukaran"
+        android:icon="@drawable/ic_home_credit"
+        android:title="Penukaran" />
+
+    <item
+        android:id="@+id/homeNavScan"
+        android:icon="@drawable/ic_home_search"
+        android:title="Scan" />
+
+    <item
+        android:id="@+id/homeNavHarga"
+        android:icon="@drawable/ic_home_price"
+        android:title="Harga" />
+
+    <item
+        android:id="@+id/homeNavAkun"
+        android:icon="@drawable/ic_home_account"
+        android:title="Akun" />
+
+</menu>
