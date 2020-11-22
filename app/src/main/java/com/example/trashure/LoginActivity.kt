@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
         val btnMasuk = findViewById<Button>(R.id.buttonLogin)
         btnMasuk?.setOnClickListener(){
-            Toast.makeText(this@LoginActivity, "Masuk ke Home", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
         }
 
         val btnGplus = findViewById<ImageView>(R.id.loginGplus)

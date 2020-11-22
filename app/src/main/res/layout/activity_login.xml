@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_centerInParent="true">
 
@@ -89,15 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:paddingVertical="18dp"
+                android:paddingVertical="14dp"
                 android:layout_marginHorizontal="24dp"
                 android:text="masuk"
                 android:backgroundTint="@color/green_primary"/>
 
             <RelativeLayout
-                android:paddingVertical="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
 
                 <TextView
                     android:paddingVertical="6dp"
