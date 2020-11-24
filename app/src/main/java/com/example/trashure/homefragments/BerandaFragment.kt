@@ -5,7 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.trashure.R
+import com.example.trashure.adapter.AdapterSetoran
+import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.data.BarData
+import com.github.mikephil.charting.data.BarDataSet
+import com.github.mikephil.charting.data.BarEntry
+import kotlinx.android.synthetic.main.fragment_beranda.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +30,9 @@ class BerandaFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapterSetoran: RecyclerView.Adapter<AdapterSetoran.ViewHolder>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -30,12 +41,50 @@ class BerandaFragment : Fragment() {
         }
     }
 
+//    private fun setBarChart() {
+//
+//        val entries = ArrayList<BarEntry>()
+//        entries.add(BarEntry(8f, 0.toFloat(),))
+//        entries.add(BarEntry(2f, 1.toFloat()))
+//        entries.add(BarEntry(5f, 2.toFloat()))
+//        entries.add(BarEntry(20f, 3.toFloat()))
+//        entries.add(BarEntry(15f, 4.toFloat()))
+//        entries.add(BarEntry(19f, 5.toFloat()))
+//
+//        val barDataSet = BarDataSet(entries, "Cells")
+//
+//        val labels = ArrayList<String>()
+//        labels.add("18-Jan")
+//        labels.add("19-Jan")
+//        labels.add("20-Jan")
+//        labels.add("21-Jan")
+//        labels.add("22-Jan")
+//        labels.add("23-Jan")
+//        val data = BarData(labels, barDataSet)
+//
+//        chartSampahTerkumpul?.data = data
+//
+//        barDataSet.color = resources.getColor(R.color.orange_accent)
+//
+//        chartSampahTerkumpul?.animateY(5000)
+//
+//    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_beranda, container, false)
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recyclerSetoran.apply {
+            layoutManager = LinearLayoutManager(activity)
+            adapter = AdapterSetoran()
+        }
     }
 
     companion object {
