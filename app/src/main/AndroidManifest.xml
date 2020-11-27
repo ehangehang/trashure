@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trashure">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".EditAkunActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/Theme.Trashure.NoActionBar" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">

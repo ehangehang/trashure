@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/homeTopNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:drawableStart="@drawable/ic_back_button"
+                android:drawablePadding="16dp"
+                android:text="Pengaturan"
+                android:textColor="@color/blue_accent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/settingsBahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_translate"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Ganti Bahasa"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settingsNotifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_notifications"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Notifikasi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settingsBantuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_help"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Bantuan"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settingsKebijakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_padlock"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Kebijakan Privasi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settingsKetentuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_assignment_ketentuan"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Ketentuan Layanan"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settingsNilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_material_star_nilai"
+            android:drawablePadding="20dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:text="Beri Kami Nilai"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
